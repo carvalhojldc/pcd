@@ -1,0 +1,6 @@
+Bcast
+http://mpitutorial.com/tutorials/mpi-broadcast-and-collective-communication/
+
+MPI Scatter, Gather, and Allgather
+http://mpitutorial.com/tutorials/mpi-scatter-gather-and-allgather/
+
