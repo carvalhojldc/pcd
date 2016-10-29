@@ -16,6 +16,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 #include <mpi.h>
 
 int main(void) {
@@ -30,6 +31,7 @@ int main(void) {
     MPI_Comm_size(MPI_COMM_WORLD, &comm_sz);
 
     data = malloc(sizeof(int)*comm_sz);
+    assert(data != NULL);
 
     MPI_Allgather(&my_rank, 1, MPI_INT, data, 1, MPI_INT, MPI_COMM_WORLD);
 
